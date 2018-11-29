@@ -25,3 +25,7 @@
   - 实际开发中容易View和Model产生耦合
   - Model职责过于简单
   - 不方便UnitTest
+  
+- MVC通信方式；其实就是标准MVC中虚线部分
+  - 视图收到来自用户的事件，需要将事件交给VC处理(一般方式有delegate/block/notification),VC然后改变Model，然后Model更新后反向通知VC更新View
+  - Model有更新后，告知VC，VC通过View暴露的接口进行更新View
