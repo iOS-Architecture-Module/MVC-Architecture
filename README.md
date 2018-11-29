@@ -22,6 +22,7 @@
   ![MVC-Architecture!](https://github.com/iOS-Architecture-Module/iOS-Architecture/blob/master/mvc-real.png "MVC-Architecture")
 - MVC模式的缺陷
   - VC过于臃肿；
+  - View和VC强耦合
   - 实际开发中容易View和Model产生耦合
   - Model职责过于简单
   - 不方便UnitTest
