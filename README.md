@@ -8,4 +8,6 @@
 
 - 标准MVC中VC的职责：https://developer.apple.com/documentation/uikit/uiviewcontroller?language=objc
   - 更新视图的内容，通常是响应底层数据Model的变化
-  - 
+  - 响应界面的用户交互
+  - 重新布局和管理整个交互界面
+  - 协调app的其他对象--包括其他的VC
