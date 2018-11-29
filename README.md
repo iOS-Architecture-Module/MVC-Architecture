@@ -4,4 +4,4 @@
 ## MVC
 #### 请下载代码切换到‘feature/havi/mvc-arcchitecture'分支：
 - 标准的MVC结构
-
+![Philadelphia's Magic Gardens. This place was so cool!](/assets/images/philly-magic-gardens.jpg "Philadelphia's Magic Gardens")
