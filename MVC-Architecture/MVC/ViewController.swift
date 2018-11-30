@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 	
 	/*
 	备注：
-	
+	https://developer.apple.com/documentation/uikit/uiviewcontroller?language=objc
 	苹果要求的标准的VC的职责：
 	1. 更新UIView,多数情况是由于model发生变化需要更新UIView
 	2.响应来自UIView的用户交互事件
