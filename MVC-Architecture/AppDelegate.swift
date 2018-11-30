@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		let window = UIWindow.init(frame: UIScreen.main.bounds)
+		let root = UIStoryboard.init(name: "Main", bundle: nil)
+		let vc = root.instantiateInitialViewController()
+		window.rootViewController = vc
+		window.backgroundColor = UIColor.white
+		window.makeKeyAndVisible()
 		return true
 	}
 

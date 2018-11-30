@@ -19,6 +19,10 @@
 		48CDA62D21AF91C000B32374 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA62C21AF91C000B32374 /* PostModel.swift */; };
 		48CDA63021AF933C00B32374 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA62F21AF933C00B32374 /* PostTableViewCell.swift */; };
 		48CDA6E521B16DA100B32374 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6E421B16DA100B32374 /* RootViewController.swift */; };
+		48CDA6E821B17B6F00B32374 /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6E721B17B6F00B32374 /* MVPViewController.swift */; };
+		48CDA6EA21B17CAD00B32374 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6E921B17CAC00B32374 /* MVPPresenter.swift */; };
+		48CDA6EC21B17CC500B32374 /* MVPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6EB21B17CC500B32374 /* MVPModel.swift */; };
+		48CDA6EE21B17D2600B32374 /* MVPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6ED21B17D2600B32374 /* MVPCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		48CDA62C21AF91C000B32374 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		48CDA62F21AF933C00B32374 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		48CDA6E421B16DA100B32374 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		48CDA6E721B17B6F00B32374 /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		48CDA6E921B17CAC00B32374 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
+		48CDA6EB21B17CC500B32374 /* MVPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPModel.swift; sourceTree = "<group>"; };
+		48CDA6ED21B17D2600B32374 /* MVPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		48C34EEE21AF768D000DDC3B /* MVC-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				48CDA6E621B17B2900B32374 /* MVP */,
 				48CDA6CE21B0CE5400B32374 /* MVC */,
 				48C34EEF21AF768D000DDC3B /* AppDelegate.swift */,
 				48CDA6E421B16DA100B32374 /* RootViewController.swift */,
@@ -183,6 +192,17 @@
 				48C34EF121AF768D000DDC3B /* ViewController.swift */,
 			);
 			path = MVC;
+			sourceTree = "<group>";
+		};
+		48CDA6E621B17B2900B32374 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				48CDA6E721B17B6F00B32374 /* MVPViewController.swift */,
+				48CDA6E921B17CAC00B32374 /* MVPPresenter.swift */,
+				48CDA6EB21B17CC500B32374 /* MVPModel.swift */,
+				48CDA6ED21B17D2600B32374 /* MVPCell.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,11 +337,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CDA6EA21B17CAD00B32374 /* MVPPresenter.swift in Sources */,
 				48CDA6E521B16DA100B32374 /* RootViewController.swift in Sources */,
 				48C34EF221AF768D000DDC3B /* ViewController.swift in Sources */,
+				48CDA6E821B17B6F00B32374 /* MVPViewController.swift in Sources */,
 				48CDA62D21AF91C000B32374 /* PostModel.swift in Sources */,
+				48CDA6EC21B17CC500B32374 /* MVPModel.swift in Sources */,
 				48C34EF021AF768D000DDC3B /* AppDelegate.swift in Sources */,
 				48CDA63021AF933C00B32374 /* PostTableViewCell.swift in Sources */,
+				48CDA6EE21B17D2600B32374 /* MVPCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Disney.MVC-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -532,7 +556,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Disney.MVC-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
