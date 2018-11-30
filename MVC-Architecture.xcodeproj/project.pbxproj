@@ -18,6 +18,7 @@
 		48CDA62921AF7AC800B32374 /* SwiftIconFont.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48C34F1D21AF7A85000DDC3B /* SwiftIconFont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48CDA62D21AF91C000B32374 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA62C21AF91C000B32374 /* PostModel.swift */; };
 		48CDA63021AF933C00B32374 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA62F21AF933C00B32374 /* PostTableViewCell.swift */; };
+		48CDA6E521B16DA100B32374 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6E421B16DA100B32374 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		48C34F1D21AF7A85000DDC3B /* SwiftIconFont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftIconFont.framework; sourceTree = "<group>"; };
 		48CDA62C21AF91C000B32374 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		48CDA62F21AF933C00B32374 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		48CDA6E421B16DA100B32374 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +122,9 @@
 		48C34EEE21AF768D000DDC3B /* MVC-Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				48CDA62E21AF930D00B32374 /* View */,
-				48CDA62B21AF91A900B32374 /* Model */,
+				48CDA6CE21B0CE5400B32374 /* MVC */,
 				48C34EEF21AF768D000DDC3B /* AppDelegate.swift */,
-				48C34EF121AF768D000DDC3B /* ViewController.swift */,
+				48CDA6E421B16DA100B32374 /* RootViewController.swift */,
 				48C34EF321AF768D000DDC3B /* Main.storyboard */,
 				48C34EF621AF768E000DDC3B /* Assets.xcassets */,
 				48C34EF821AF768E000DDC3B /* LaunchScreen.storyboard */,
@@ -172,6 +173,16 @@
 				48CDA62F21AF933C00B32374 /* PostTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		48CDA6CE21B0CE5400B32374 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				48CDA62B21AF91A900B32374 /* Model */,
+				48CDA62E21AF930D00B32374 /* View */,
+				48C34EF121AF768D000DDC3B /* ViewController.swift */,
+			);
+			path = MVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CDA6E521B16DA100B32374 /* RootViewController.swift in Sources */,
 				48C34EF221AF768D000DDC3B /* ViewController.swift in Sources */,
 				48CDA62D21AF91C000B32374 /* PostModel.swift in Sources */,
 				48C34EF021AF768D000DDC3B /* AppDelegate.swift in Sources */,
