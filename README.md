@@ -59,7 +59,7 @@
   
   ***
   
-- MVP架构图：
+- MVVM架构图：
 ![MVP-Architecture!](https://github.com/iOS-Architecture-Module/iOS-Architecture/blob/master/mvvm.png "MVP-Architecture")
 MVVM中关键是View和ViewModel进行了绑定
 
