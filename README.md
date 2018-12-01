@@ -60,5 +60,5 @@
   ***
   
   - MVP架构图：
-![MVP-Architecture!](https://github.com/iOS-Architecture-Module/iOS-Architecture/blob/master/mvp.png "MVP-Architecture")
+![MVP-Architecture!](https://github.com/iOS-Architecture-Module/iOS-Architecture/blob/master/mvvm.png "MVP-Architecture")
 
