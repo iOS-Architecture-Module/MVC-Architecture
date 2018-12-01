@@ -11,16 +11,17 @@ import UIKit
 
 class MVPPresenter: NSObject {
 	
-	private var mvpModel: [MVPModel]
+	private var mvpModel: PostListModel
 	private var tableView: UITableView!
 //	private let mvp
 	
 	init(withTableView: UITableView) {
 		tableView = withTableView
+		mvpModel = PostListModel()
 		let post1 = MVPModel.init( "this is mvp one cell", likeCount: 1)
 		let post2 = MVPModel.init( "this is mvp two cell", likeCount: 2)
 		let post3 = MVPModel.init( "this is  mvp three cell", likeCount: 3)
-		mvpModel = [post1, post2, post3]
+		mvpModel.postList = [post1, post2, post3]
 		super.init()
 		tableView.delegate = self
 		tableView.dataSource = self
@@ -30,7 +31,7 @@ class MVPPresenter: NSObject {
 
 extension MVPPresenter: UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return mvpModel.count
+		return (mvpModel.postList?.count)!
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,7 +41,7 @@ extension MVPPresenter: UITableViewDataSource {
 		}
 		cell?.delegate = self
 		cell?.indexPath = indexPath
-		let postModel: MVPModel = mvpModel[indexPath.row]
+		let postModel: MVPModel = mvpModel.postList![indexPath.row]
 		cell!.postContent?.text = postModel.textBody
 		cell!.likeCountLabel?.text = "\(postModel.likeCount)"
 		return cell!
@@ -61,7 +62,7 @@ extension MVPPresenter: UITableViewDelegate {
 
 extension MVPPresenter: TableViewCellButtonClick {
 	func starButtonClick(_ index: IndexPath?) {
-		let model = mvpModel[index!.row]
+		let model = mvpModel.postList![index!.row]
 		model.likeCount = model.likeCount + 1
 		
 		tableView.reloadData()

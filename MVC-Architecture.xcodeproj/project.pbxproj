@@ -23,6 +23,7 @@
 		48CDA6EA21B17CAD00B32374 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6E921B17CAC00B32374 /* MVPPresenter.swift */; };
 		48CDA6EC21B17CC500B32374 /* MVPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6EB21B17CC500B32374 /* MVPModel.swift */; };
 		48CDA6EE21B17D2600B32374 /* MVPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6ED21B17D2600B32374 /* MVPCell.swift */; };
+		48CDA6F021B238B300B32374 /* PostListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CDA6EF21B238B300B32374 /* PostListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		48CDA6E921B17CAC00B32374 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
 		48CDA6EB21B17CC500B32374 /* MVPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPModel.swift; sourceTree = "<group>"; };
 		48CDA6ED21B17D2600B32374 /* MVPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCell.swift; sourceTree = "<group>"; };
+		48CDA6EF21B238B300B32374 /* PostListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				48CDA6E721B17B6F00B32374 /* MVPViewController.swift */,
 				48CDA6E921B17CAC00B32374 /* MVPPresenter.swift */,
 				48CDA6EB21B17CC500B32374 /* MVPModel.swift */,
+				48CDA6EF21B238B300B32374 /* PostListModel.swift */,
 				48CDA6ED21B17D2600B32374 /* MVPCell.swift */,
 			);
 			path = MVP;
@@ -344,6 +347,7 @@
 				48CDA62D21AF91C000B32374 /* PostModel.swift in Sources */,
 				48CDA6EC21B17CC500B32374 /* MVPModel.swift in Sources */,
 				48C34EF021AF768D000DDC3B /* AppDelegate.swift in Sources */,
+				48CDA6F021B238B300B32374 /* PostListModel.swift in Sources */,
 				48CDA63021AF933C00B32374 /* PostTableViewCell.swift in Sources */,
 				48CDA6EE21B17D2600B32374 /* MVPCell.swift in Sources */,
 			);

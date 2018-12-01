@@ -9,7 +9,13 @@
 import Foundation
 import UIKit
 
+/*
 
+MVP相比较MVC多了个Presenter，
+优点：
+1、
+
+*/
 
 class MVPViewController: UIViewController {
 	
