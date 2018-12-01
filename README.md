@@ -42,7 +42,7 @@
 
 - MVP引用关系：
 
-  - 在MVP中，Presenter是持有Model 和 View
+  - 在MVP中，Presenter是持有Model
   - Model和View相互不知道彼此的存在
   - Model和View通过Presenter进行通信
 
