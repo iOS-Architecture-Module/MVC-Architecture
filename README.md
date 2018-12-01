@@ -59,6 +59,15 @@
   
   ***
   
-  - MVP架构图：
+- MVP架构图：
 ![MVP-Architecture!](https://github.com/iOS-Architecture-Module/iOS-Architecture/blob/master/mvvm.png "MVP-Architecture")
+MVVM中关键是View和ViewModel进行了绑定
+
+  - 基于KVO的绑定：[FBKVO](https://github.com/facebook/KVOController)/[RZDataBinding](https://github.com/Raizlabs/RZDataBinding)/[Bond](https://github.com/DeclarativeHub/Bond)
+  - 基于响应式编程：[RxSwift](https://github.com/ReactiveX/RxSwift)/[ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)/[PromiseKit](https://github.com/mxcl/PromiseKit)
+
+- MVVM的引用关系
+  - 在MVVM中，VM持有Model和View
+  
+- MVVM各个模块的职责
 
