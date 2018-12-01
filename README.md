@@ -2,7 +2,7 @@
 这是一个简单的按照个人的理解实现的Architecture;包括：MVC，MVP,MVVM,Viper
 
 ## MVC
-#### 请下载代码切换到‘feature/havi/mvc-arcchitecture'分支：
+#### 请下载代码切换到‘developer'分支：
 - 标准的MVC结构
 ![MVC-Architecture!](https://github.com/iOS-Architecture-Module/iOS-Architecture/blob/master/mvc.png "MVC-Architecture")
   - VC同时持有(引用)View和Model；实线部分
@@ -30,3 +30,34 @@
 - MVC通信方式；其实就是标准MVC中虚线部分
   - 视图收到来自用户的事件，需要将事件交给VC处理(一般方式有delegate/block/notification),VC然后改变Model，然后Model更新后反向通知VC更新View
   - Model有更新后，告知VC，VC通过View暴露的接口进行更新View
+  
+- MVC引用关系：
+  - MVC三个模块之间是相互引用的；
+  
+***
+
+- MVP架构图：
+![MVP-Architecture!](https://github.com/iOS-Architecture-Module/iOS-Architecture/blob/master/mvp.png "MVP-Architecture")
+
+
+- MVP引用关系：
+
+  - 在MVP中，Presenter是持有Model 和 View
+  - Model和View相互不知道彼此的存在
+  - Model和View通过Presenter进行通信
+
+- MVP各个模块职责：
+  - Presenter中是没有和布局有关的代码；主要负责接受用户事件和Model交互；有时候网络请求也放到这里来
+  - View进行界面显示
+  - Model单纯的model
+
+- MVP的解决的问题：
+  - MVC中存在的问题；
+
+- MVP的缺陷：
+  - 由于Model和View互不不知道彼此存在，因此当Model发生变化后，无法立即体现在View上面来
+  
+  ***
+  
+  
+
